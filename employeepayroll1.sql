@@ -22,3 +22,16 @@ ALTER TABLE  Employee_Payroll_service ADD Gender1 char(1);
 UPDATE  Employee_Payroll_service SET Gender1='M' WHERE Name='Aditya' or name = 'tusar';
 
 SELECT * FROM Employee_Payroll_service;
+SELECT SUM(Salary) FROM  Employee_Payroll_service
+WHERE Gender = 'male' GROUP BY Gender;
+
+SELECT AVG(Salary) FROM  Employee_Payroll_service
+WHERE Gender = 'male' GROUP BY Gender;
+
+SELECT MIN(Salary) FROM Employee_Payroll_service
+WHERE Gender = 'male' GROUP BY Gender;
+
+SELECT MAX(Salary) FROM Employee_Payroll_service
+WHERE Gender = 'male' GROUP BY Gender;
+
+SELECT * FROM Employee_Payroll_service;
