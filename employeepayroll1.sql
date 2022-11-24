@@ -15,3 +15,6 @@ insert into employeepayroll1 (name,gender,city,Salary,StartDate) values('Tushar'
 insert into employeepayroll1 (name,gender,city,Salary,StartDate) values('Preeti','female','Dharwad',60000,'2022-11-21');
 drop table  employeepayroll1;
 SELECT * FROM employeepayroll1;
+SELECT Name,StartDate FROM  employeepayroll1 WHERE Name='Preeti';
+SELECT * FROM  employeepayroll1 WHERE StartDate BETWEEN CAST('2022-11-21' AS DATE) AND date (now()) ;
+SELECT * FROM employeepayroll1;
